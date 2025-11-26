@@ -1,52 +1,134 @@
+
 .navbar {
     background-color: #0B1D51;
 }
 
-.navbar-collapse {
-    margin-left: 600px;
-}
-
-.hero{
-    height: 70vh;
-    align-items: center;
-    display: flex;
-}
 
 .hero {
-    margin-top: 80px;
-        padding: 100px 0;
-        }
-        .hero-title {
-            font-size: 48px;
-            font-weight: 800;
-            color: #4A70A9;
-        }
-        .hero-text {
-            font-size: 17px;
-            color: #333;
-        }
-        .hero-img {
-            width: 100%;
-            max-width: 700px;
-        }
-
-.blue {
-    background-color: #4A70A9;
+    padding: 80px 0;
+    margin-top: 90px;
 }
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #4A70A9;
+}
+
+.hero-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.hero-img {
+    max-width: 90%;
+}
+
 
 .button {
     background-color: #4A70A9;
-    margin: auto;
-    padding: 15px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.partner{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.button:hover {
+    background-color: #3a5c8c;
 }
 
+
+.partner-logo {
+    max-height: 60px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.C {
+    color: #4A70A9;
+}
+.card {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.text-primary-about {
+    color: #4A70A9;
+}
+
+.about-box {
+    background: #f7f9fc;
+    border-left: 5px solid #4A70A9;
+}
+
+.about-section {
+    background-color: #ffffff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.footer p {
+    color: grey;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+
+
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .button {
+        display: block;
+        margin: auto;
+    }
+    .hero-img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .partner-logo {
+        max-height: 45px;
+    }
+}
